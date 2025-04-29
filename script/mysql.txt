@@ -1,0 +1,11 @@
+CREATE TABLE `yuntu`.`sys_user`  (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `create_time` datetime NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `yuntu`.`sys_user`
+ADD UNIQUE INDEX `unq_name`(`user_name`) USING BTREE;
