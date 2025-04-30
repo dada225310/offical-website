@@ -127,8 +127,7 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.yuntu.premachine.StartApplication</mainClass>
-                    <skip>true</skip>
+                    <mainClass>com.yuntu.website.StartApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
